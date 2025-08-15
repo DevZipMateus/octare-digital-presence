@@ -75,7 +75,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-white/30 text-white hover:bg-accent hover:text-accent-foreground hover:border-accent backdrop-blur-sm font-semibold px-8 py-4 text-lg rounded-xl transition-all duration-300"
+                className="border-white/60 text-white bg-white/10 hover:bg-accent hover:text-accent-foreground hover:border-accent backdrop-blur-sm font-semibold px-8 py-4 text-lg rounded-xl transition-all duration-300"
               >
                 WhatsApp
               </Button>
