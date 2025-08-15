@@ -89,7 +89,7 @@ const Location = () => {
                 </a>
                 <a 
                   href="tel:+5517991779710"
-                  className="flex-1 bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-6 rounded-xl text-center transition-colors duration-300"
+                  className="flex-1 bg-white/10 text-white border border-white/60 hover:bg-accent hover:text-accent-foreground hover:border-accent font-semibold py-3 px-6 rounded-xl text-center transition-colors duration-300"
                 >
                   Ligar Agora
                 </a>

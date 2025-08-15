@@ -122,7 +122,7 @@ const Footer = () => {
               
               <button
                 onClick={() => scrollToSection('#contato')}
-                className="w-full border border-white/30 text-white hover:bg-white/10 font-semibold px-4 py-2 rounded-lg transition-colors duration-300 text-sm"
+                className="w-full border border-white/60 text-white bg-white/10 hover:bg-accent hover:text-accent-foreground hover:border-accent font-semibold px-4 py-2 rounded-lg transition-colors duration-300 text-sm"
               >
                 Formulário de Contato
               </button>
