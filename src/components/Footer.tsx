@@ -124,14 +124,7 @@ const Footer = () => {
             
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-xs text-white/60">
               <span>Desenvolvido com ❤️ para sua empresa</span>
-              <div className="flex space-x-4">
-                <button onClick={() => scrollToSection('#sobre')} className="hover:text-accent transition-colors duration-200">
-                  Política de Privacidade
-                </button>
-                <button onClick={() => scrollToSection('#contato')} className="hover:text-accent transition-colors duration-200">
-                  Termos de Uso
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
