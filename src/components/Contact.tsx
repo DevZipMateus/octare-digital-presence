@@ -43,14 +43,35 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simular envio do formulário
     try {
-      // Aqui seria feita a integração com o backend
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Formatação da mensagem para o WhatsApp
+      const whatsappMessage = `*Nova solicitação de orçamento - OCTARE Contabilidade*
+
+*Nome:* ${formData.name}
+*E-mail:* ${formData.email}
+*Telefone:* ${formData.phone}
+${formData.company ? `*Empresa:* ${formData.company}` : ''}
+${formData.service ? `*Serviço de interesse:* ${formData.service}` : ''}
+
+*Mensagem:*
+${formData.message}
+
+---
+Enviado pelo formulário do site`;
+
+      // Encode da mensagem para URL
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappUrl = `https://wa.me/5517991779710?text=${encodedMessage}`;
+      
+      // Simular processamento
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Abrir WhatsApp
+      window.open(whatsappUrl, '_blank');
       
       toast({
-        title: "Mensagem enviada com sucesso!",
-        description: "Entraremos em contato em breve. Obrigado!",
+        title: "Redirecionando para WhatsApp!",
+        description: "Sua mensagem será enviada via WhatsApp.",
       });
 
       // Resetar formulário
@@ -64,7 +85,7 @@ const Contact = () => {
       });
     } catch (error) {
       toast({
-        title: "Erro ao enviar mensagem",
+        title: "Erro ao processar",
         description: "Tente novamente ou entre em contato via WhatsApp.",
         variant: "destructive",
       });
