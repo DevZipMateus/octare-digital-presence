@@ -40,7 +40,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/13f726ce-769b-4559-9c80-1f692bfa06df.png" 
                 alt="OCTARE Contabilidade"
-                className="h-12 w-auto mb-4 brightness-0 invert"
+                className="h-12 w-auto mb-4"
               />
               <p className="text-white/80 text-sm leading-relaxed">
                 Especialistas em contabilidade desde 2015. Oferecemos soluções 
