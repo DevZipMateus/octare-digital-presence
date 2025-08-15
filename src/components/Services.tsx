@@ -182,7 +182,7 @@ const Services = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-3"
+                  className="bg-primary/10 text-primary border-primary/60 hover:bg-primary hover:text-primary-foreground hover:border-primary font-semibold px-8 py-3"
                 >
                   WhatsApp
                 </Button>
