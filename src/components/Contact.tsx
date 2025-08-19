@@ -115,8 +115,8 @@ Enviado pelo formulário do site`;
       icon: Mail,
       title: 'E-mail',
       description: 'Envie sua dúvida por e-mail',
-      contact: 'marcosponego@gmail.com',
-      action: 'mailto:marcosponego@gmail.com',
+      contact: 'contato@octare.com.br',
+      action: 'mailto:contato@octare.com.br',
       buttonText: 'Enviar E-mail'
     }
   ];

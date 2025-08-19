@@ -18,7 +18,7 @@ const Location = () => {
     {
       icon: Mail,
       title: 'E-mail',
-      content: 'marcosponego@gmail.com',
+      content: 'contato@octare.com.br',
       subtitle: 'Resposta em até 24h'
     },
     {
